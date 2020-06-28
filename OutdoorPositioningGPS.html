@@ -18,6 +18,12 @@
         <h1>Arduino UNO</h1>
         <p>To use GPS module with Arduino UNO we need to visit <a href="https://github.com/oledarduino/outdoorPositioningWithGPS/blob/master/Arduino%20Files/GPSwithArduinoUNO/GPSwithArduinoUNO.ino">this link</a> and upload the code in our board. GY-GPS6MV2 was used.</p>
         <br>
+        <p>After uploading the code, open your serial monitor. There you should see many lines of constantly coming (every second) data starting with "$GP". </p>
+        <br>
+        <p>Each line represents some data, more info can be found <a href="http://aprs.gids.nl/nmea/">here</a>. Depending on your needs you can extract the data from those lines.</p>
+        <br>
+        <p>For instance, if I need the location data, I can get it from "$GPRMC" line.</p>
+        <pre></pre>
         <h1>ESP8266</h1>
         <p>To use GPS module with ESP8266 we need to visit <a href="https://github.com/oledarduino/outdoorPositioningWithGPS/blob/master/Arduino%20Files/GPSwithESP8266/GPSwithESP8266.ino">this link</a> and upload the code in our board. GY-GPS6MV2 was used.</p>
         <h1>ESP32</h1>
